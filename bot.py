@@ -4,9 +4,9 @@ import cv2
 import numpy as np
 
 class BotConfig:
-    PIN = "1289669821" # Change with your pin
-    GAME_PACKAGE = "com.drivezone.car.race.game"
-    GAME_ACTIVITY = "com.unity3d.player.UnityPlayerActivityExtension"
+    PIN = "00000" # Change with your pin
+    GAME_PACKAGE = "com.drivezone.car.race.game" # This is the game package
+    GAME_ACTIVITY = "com.unity3d.player.UnityPlayerActivityExtension" # This is the game activity
 
     # Static tap positions (update these to match your device)
     TAP_X = (2011, 165)         # tap_X
