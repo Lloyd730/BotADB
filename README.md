@@ -21,6 +21,7 @@ Both versions can:
 - Image Recognition
 - Sample Usage
 - License
+- Set Up ADB
 
 ---
 
@@ -90,6 +91,76 @@ If not:
 	
 	# Close the game
 	close_app
+
+---
+
+## Setting Up ADB (Android Debug Bridge)
+
+ADB lets your computer communicate with your Android device for automation, debugging, and control. Follow these steps to set it up:
+
+---
+
+### Step 1: Enable Developer Options on your Android Device
+
+1. Open **Settings**
+2. Go to **About phone**
+3. Tap **Build number** 7 times until you see: `You are now a developer!`
+
+---
+
+### Step 2: Enable USB Debugging
+
+1. Go back to **Settings**
+2. Open **Developer options**
+3. Enable **USB Debugging**
+
+---
+
+### Step 3: Install ADB on Your Computer
+
+#### On **Debian/Ubuntu/Linux**:
+
+```bash
+sudo apt update
+sudo apt install adb
+```
+
+#### On **Windows**:
+
+1. Download the SDK Platform Tools:  
+   [https://developer.android.com/studio/releases/platform-tools](https://developer.android.com/studio/releases/platform-tools)
+
+2. Extract the ZIP to a folder (e.g., `C:\adb`)
+
+3. Add the folder to your **System Environment Variables > Path**
+
+4. Open **CMD or PowerShell** and type:
+
+```cmd
+adb devices
+```
+
+You should see your device listed (if connected with USB).
+
+---
+
+###  Step 4: Authorize Connection
+
+- On your phone, when prompted with **“Allow USB debugging?”**, tap **Allow**.
+- To check if it's working:
+
+```bash
+adb devices
+```
+
+Output should look like:
+
+```
+List of devices attached
+ZX1XXXXXXX	device
+```
+
+---
 
 # License
 
