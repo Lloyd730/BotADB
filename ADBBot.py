@@ -87,3 +87,12 @@ class GameBot:
     
 if __name__ == "__main__":
     bot = GameBot()
+    ---
+
+"""Python OOP Bot
+
+This version uses Python classes and OpenCV to automate your device.
+
+> ⚠️ **You must implement your own logic here.**  
+> Use this script as a foundation—adapt the automation flow to your game's UI or interaction pattern.
+"""
